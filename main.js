@@ -12,7 +12,8 @@ function renderCards() {
     console.log(windowWidth);
     var cardWidth = 350;
     
-    data.forEach( (data, index) => {
+    // item = text on the card
+    data.forEach( (item, index) => {
         const length = data.length;
         let div = document.createElement('div');
         div.classList.add("box");
@@ -30,12 +31,13 @@ function renderCards() {
         }
         else {
             div.classList.add("right");
-            const offset = windowWidth/2 - cardWidth/2 + (length - index+1) * 10;
+            const offset = windowWidth/2 - cardWidth/2 - (length - index+1) * 10;
             console.log(offset)
             div.style.transform = `translateX(${offset}px)`;
+            div.style.zIndex = (length - index);
         }
     
-        div.innerHTML = `${index} ${data}`
+        div.innerHTML = `${index} ${item}`
     
         carousel.appendChild(div);
     
