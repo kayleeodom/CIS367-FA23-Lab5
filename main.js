@@ -26,7 +26,7 @@ async function addCards() {
                     <p class="Hp">HP${person.HitPoints}</p>
                 </div>
                 <div class="description">
-                    <p class="title">${person.FirstName} ${person.LastName}</p>
+                    <p class="title">${person.FirstName} '${person.NickName}' ${person.LastName}</p>
                     <p class="field">${person.FieldofStudy}</p>
                 </div>
             </div>
@@ -45,7 +45,7 @@ async function addCards() {
                 <p class="sentence">Prevent all damage done to this Pokemon by attacks from Basic Pokemon during 
                     your apponenets next turn.</p>
                             
-                <div class="skills">
+                <div class="skillstwo">
                     <div class="stars">
                         <span class="material-symbols-outlined">stars</span>
                     </div>

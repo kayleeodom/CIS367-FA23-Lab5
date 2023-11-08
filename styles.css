@@ -116,8 +116,7 @@ body {
     border-top-right-radius: 5px 5px;
     border-top-left-radius: 5px 5px;
     padding: 6px;
-    min-height: 5.5em;
-    height: auto;
+    min-height: 4.5rem;
 }
 
 .basic{
@@ -172,14 +171,21 @@ img {
 
 .holder{
     margin: 2;
-    min-height: 11rem;
+    min-height: 8.5rem;
+    padding-top: 2px;
 }
 
 .skills {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: auto;
+}
+
+.skillstwo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 4px;
 }
 
 
@@ -187,10 +193,10 @@ img {
     display: flex;
     flex-direction: column;
     font-size: small;
-    padding-top: 5px;
+    padding-bottom: 2px;
     font-weight: bold;
-    height: auto;
     font-size: x-small;
+    min-height: 2.5rem;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
@@ -218,6 +224,7 @@ img {
 
 .bottom{
     display: flex;
+    padding-top: 2px;
     flex-direction: row;
     justify-content:space-between;
     font-size:x-small;
@@ -231,7 +238,7 @@ img {
 }
 
 .buttons {
-    background-color: white;
+    background-color: black;
     color: black;
     display: flex;
     flex-direction: row;
