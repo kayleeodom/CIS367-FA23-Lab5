@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
-body{
-    /* background-color: blue; */
+body {
+    background-color: burlywood;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #222;
+    /* grid-template-columns: auto auto auto auto;
+    grid-gap: 45px;
+    display:grid;
+    align-items: center;
+    margin: 0; */
 }
 
 .container {
@@ -38,13 +43,11 @@ body{
 
 
 .box {
-    background-color: steelblue;
     /* height: 500px;
     max-height: 500px; */
     width: 350px;
     aspect-ratio: 2.5/3.5;
     position: absolute;
-    border: 2px solid goldenrod;
     border-radius: 16px;
     display: flex;
     justify-content: center;
@@ -54,18 +57,18 @@ body{
 
 }
 
-.active 
+/* .active 
 {
     /* z-index: 150;
-    transform: scale(110%); */
-}
+    transform: scale(110%);
+} */
 
 #prevButton, #nextButton
 {
     /* padding:1rem; */
     font-size: 3rem;
     z-index: 400;
-    background-color: rgba(100,100,100,0.5);
+    background-color:black;
     width:80px;
     height:80px;
     border-radius: 40px;
@@ -87,78 +90,156 @@ body{
     transform: scale(115%);
 }
 
-#prevButton {
-    /* justify-self: start; */
+.card {
+    background-color: gray;
+    border: 5px solid yellow;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+    height: 530px;
+    overflow: hidden;
+    padding: 10px;
 }
 
-#nextButton {
-    /* justify-self: end; */
+.whole{
+    height: fit-content;
+}
+
+/* Design Details for the cards visual*/
+
+.top {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: space-around;
+    border: 2px solid black;
+    border-top-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    padding: 6px;
+    min-height: 5.5em;
+    height: auto;
+}
+
+.basic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.picture-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding-bottom: 2px;
+    border-bottom-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    height: auto;
+}
+
+.profile img {
+    width: 200%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+img {
+    width: 200%;
+    max-height: 200px;
+    object-fit: contain; /* This ensures that the image retains its aspect ratio */ 
+}
+
+.attack {
+    font-weight: bold;
+}
+
+.summary {
+    text-align: center;
+}
+
+.holder{
+    margin: 2;
+    min-height: 11rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
 }
 
 
-.left {
-    background-color: crimson;
-    /* opacity: 0.5; */
-    /* left:0; */
-    /* max-height: 400px; */
+.section {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    padding-top: 5px;
+    font-weight: bold;
+    height: auto;
+    font-size: x-small;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
-.one {
-    /* transform: translateX(0); */
-    left:0;
-    max-height: 325px;
-    
+.weakness {
+    padding-top: 6px;
 }
 
-.two {
-    /* transform: translateX(20px); */
-    left:20px;
-    max-height: 350px;
+.resistance {
+    padding-top: 6px;
 }
 
-.three {
-    /* transform: translateX(40px); */
-    left: 40px;
-    max-height: 375px;
+.weakness-section {
+    color: rgb(162, 24, 24);
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
 }
 
-.four {
-    /* transform: translateX(60px); */
-    left: 60px;
-    max-height: 400px;
+.resistance-section {
+    color: rgb(80, 27, 130);
+    display: flex;
+    flex-direction: row;
 }
 
-.right {
-    background-color: seagreen;
-    /* opacity: 0.5; */
-    /* right:0; */
-    /* height: 400px; */
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    font-size:x-small;
+    margin: 2px;
 }
 
-
-.five {
-    right:60px;
-    max-height: 400px;
-    z-index: 8;
+.sentence {
+    font-size: small;
+    text-align: left;
+    padding-bottom: 1px;
 }
 
-.six {
-    /* transform: translateX(40px); */
-    right: 40px;
-    max-height: 375px;
-    z-index: 7;
+.buttons {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    justify-content: space-evenly;
+    padding: 6px;
+    margin: 2px;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
-.seven {
-    /* transform: translateX(20px); */
-    right:20px;
-    max-height: 350px;
-    z-index: 6;
-}
-
-.eight {
-    /* transform: translateX(0); */
-    right:0;
-    max-height: 325px;
-    z-index: 5;
-}
