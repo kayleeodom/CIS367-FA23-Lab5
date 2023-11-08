@@ -250,3 +250,17 @@ img {
     border-radius: 10px;
 }
 
+.like-btn {
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.download-btn {
+    border-radius: 8px;
+    padding: 2px;
+}
+.share-btn {
+    border-radius: 8px;
+    padding: 2px;
+}
+
