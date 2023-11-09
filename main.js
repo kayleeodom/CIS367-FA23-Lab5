@@ -84,8 +84,8 @@ async function addCards() {
                 <i class="material-icons liked-icon">favorite</i>
                 <i class="material-icons unliked-icon">favorite_border</i>
             </button>
-            <button class="download-btn" id="download">
-                <i class="material-symbols-outlined">download</i>
+            <button class="comment-btn" id="comment">
+                <i class="material-symbols-outlined">chat_bubble</i>
             </button>
             <button class="share-btn" id="share">
                 <i class="material-symbols-outlined">share</i>
@@ -103,7 +103,7 @@ async function addCards() {
         let isLiked = false;
 
         // Download controls
-        const downloadbtn = div.querySelector('.download-btn');
+        const commentbtn = div.querySelector('.comment-btn');
         
         // Share controls
         const sharebtn = div.querySelector('.share-btn');
@@ -122,9 +122,13 @@ async function addCards() {
             }
         }
 
-        // Download a card as PNG
-        function downloadCard(){
-            
+        // comment on the card
+        function commentCard(){
+            const userComment = prompt("Enter your comment:");
+
+            if (userComment !== null) {
+                console.log("User's comment:", userComment);
+            }
         }
 
         // Share a card through email
@@ -139,8 +143,8 @@ async function addCards() {
 
         // Like a card
         likebtn.addEventListener("click", likeCard);
-        // Download a card
-        downloadbtn.addEventListener("click", downloadCard);
+        // Comment on a card
+        commentbtn.addEventListener("click", commentCard);
         // Share a card
         sharebtn.addEventListener("click", shareCard);
     });
