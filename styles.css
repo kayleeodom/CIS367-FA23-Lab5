@@ -161,10 +161,6 @@ img {
     object-fit: contain; /* This ensures that the image retains its aspect ratio */ 
 }
 
-.attack {
-    font-weight: bold;
-}
-
 .summary {
     text-align: center;
 }
@@ -179,6 +175,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-weight: bold;
 }
 
 .skillstwo{
@@ -186,6 +183,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 4px;
+    font-weight: bold;
 }
 
 
